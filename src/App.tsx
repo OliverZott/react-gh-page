@@ -6,10 +6,10 @@ import DemonList from './pages/DemonList';
 function App() {
 	return (
 		<div className="App">
-			<BrowserRouter>
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
 				<Routes>
-					<Route path="/" element={<Home />}></Route>
-					<Route path="/demons" element={<DemonList />}></Route>
+					<Route path="/react-gh-page" element={<Home />}></Route>
+					<Route path="/react-gh-page/demons" element={<DemonList />}></Route>
 				</Routes>
 			</BrowserRouter>
 		</div>
